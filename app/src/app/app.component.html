@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>BIENVENIDOS</title>
+
+</head>
+<body>
+
+  <div class="hero-text">
+  <br>
+  <h1 align="center" style="font-size: 50px">BIENVENIDOS</h1>
+  <br>
+  <h2 align="center">Averigua si puedes circular o a que hora comienza tu pico y placa</h2>
+
+  <!--<form action="/formulario" method="get">
+
+    <label for="ingresa">Ingresa:</label>
+    <br>
+    <input type="text" id="ingresa" name="ingresa" placeholder="numero de placa" />
+    <br>
+    <br>
+    <br>
+    <div *ngIf = "pyp"> 
+      {{ pyp.name }}
+    </div>
+    <br>
+    <br>
+    <button type="submit" id="miBoton">Enviar</button>
+
+  </form>-->
+  <br>
+  <br>
+  <br>
+  <label for="ingresa">Ingresa:</label>
+  <br>
+  <br>
+  <br>
+  <input
+  #identificador
+  type="text"
+  placeholder="Ingresar Placa"
+  autocomplete="off"
+  />
+  <button
+  type="button"
+  (click)="getInputValue(identificador.value)">
+    Placa
+  </button>
+  <br>
+  <br>
+  <div *ngIf = "pyp"> 
+    {{ pyp.name }}
+  </div>
+  <br>
+  <br>
+   
+  </div>
+</body>
+
+</html>
